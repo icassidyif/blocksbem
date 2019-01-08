@@ -10,8 +10,6 @@ body{
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  /*padding-top: 80px;*/
-  /*for fixed header*/
   height: 100%;
 }
 .page{
@@ -130,7 +128,7 @@ body{
   text-align: left;
 }
 
-.skills a {
+.skills span {
   display: inline-flex;
   color: white;
   text-transform: uppercase;
@@ -195,10 +193,6 @@ body{
   padding: 20px 10px;
   color: white;
   text-decoration:none;
-}
-
-.reasons:hover {
-  background: #486086;
 }
 
 .reasons__icon {
