@@ -194,7 +194,11 @@ body{
   max-height: 240px;
   padding: 20px 10px;
   color: white;
+  text-decoration:none;
+}
 
+.reasons:hover {
+  background: #486086;
 }
 
 .reasons__icon {
