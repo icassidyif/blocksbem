@@ -77,26 +77,52 @@ body{
   font-weight: bold;
   margin-bottom: 5px;
 }
-/*CONTACTS*/
+/*CONTACTS---------------------------------------------------*/
 
 .contacts {
-  color: green;
   display: flex;
-  flex-direction: column;
 }
 
 .contacts__wrapper {
-  min-width: 350px;
   margin: 0 auto;
 }
 
-.contacts a {
-  color: green;
-  text-decoration:none;
+.contacts__row {
+  display: inline-flex;
+  width: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
+.contacts__col {
+}
+
+.contacts__col.col-1-4 {
+  width: calc(100% / 4);
+  min-width: 60px;
+}
+.contacts__col.col-3-4 {
+  width: calc(100% / 4 * 3);
+  min-width: 165px;
+}
+
+
+.contacts__name {
+  text-align: left;
+  padding-right: 5px;
+  margin-top:3px;
+  color: green;
+}
+
+.contacts__phone a {
+  color: green;
+  text-decoration:none;
+  font-size: 1.3em;
+  padding-left: 5px; 
+}
+
+
 .contacts_bg {
-  color: black;
   background: #f9c667; /* Old browsers */
   background: -webkit-linear-gradient(#f9c667 0%, #f79621 100%);
   background: -o-linear-gradient(#f9c667 0%, #f79621 100%);
@@ -110,37 +136,13 @@ body{
 
 .contacts_bg .contacts__name {
   text-align: right;
-}
-
-.contacts__row {
-  display: flex;
-}
-
-.contacts__column1 {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-}
-
-.contacts__column2 {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-}
-
-.contacts__name {
-  text-align: left;
-  padding-right: 5px;
-  margin-top:3px;
-}
-
-.contacts__phone {
-  font-size: 1.3em;
-  padding-left: 5px; 
+  color: black;
 }
 
 
-.services span {
+/*BENEFITS--------------------------------------*/
+
+.benefit span {
   display: inline-flex;
   color: white;
   text-transform: uppercase;br
@@ -148,14 +150,14 @@ body{
   align-items: center;
 }
 
-.services {
+.benefit {
   display: block;
   background: #4e3636;
   margin: 5px 0;
   position: relative;
 }
 
-.wrapper-services {
+.wrapper-benefit {
   display: flex;
   margin: 0 auto;
   max-width: 400px;
@@ -165,7 +167,7 @@ body{
   align-items: center;
 }
 
-.services__icon {
+.benefit__icon {
   display: inline-flex!important;
   font-size: 2em;
   color: white;
@@ -173,7 +175,7 @@ body{
   align-items: center;
 }
 
-.services__background {
+.benefit__background {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -185,10 +187,10 @@ body{
   top:0;
 }
 
-.services li:nth-child(3n) .services__background {
+.benefit:nth-child(3n) .benefit__background {
   background-position: 10% 10%;
 }
-.services li:nth-child(3n-1) .services__background {
+.benefit:nth-child(3n-1) .benefit__background {
   background-position: 20% 40%;
 }
 
